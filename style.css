@@ -1,9 +1,10 @@
 :root {
-  --pink: #d6bb8e;
+  --pink: #d49fb9;
   --bg: #311c47;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
+/* define default body style */
 body {
   font-size: 1.2rem;
   font-family: 'Work Sans', sans-serif;
@@ -17,13 +18,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/bg-prewed.jpg);
+  background-image: url(img/bg.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
 }
 
+/* define hero to full the page */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -35,28 +36,33 @@ body {
   text-shadow: var(--shadow);
 }
 
+/* define hero style */
 .hero h1 {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 5rem;
+  font-size: 3rem;
+  color: var(--pink);
 }
 
+/* define font size of h4 in hero */
 .hero h4 {
   font-size: 1.6rem;
 }
 
-.hero p {
+/* define font size of h5 in hero */
+.hero h5 {
   font-size: 1.4rem;
 }
 
+/* define button style in hero */
 .hero a {
-  color: var(--pink);
-  background-color: white;
+  background-color: var(--pink);
+  color: white;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--pink);
-  color: white;
+  background-color: white;
+  color: var(--pink); /* to get color from variable we define */
 }
 
 .mynavbar {
@@ -70,7 +76,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -118,7 +124,7 @@ body {
 .home .couple h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 2.4rem;
-  color: var(--pink);
+  color: #fcbf57;
 }
 
 .home .couple img {
