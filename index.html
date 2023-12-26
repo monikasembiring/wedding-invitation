@@ -521,7 +521,7 @@
     const name = urlParams.get('n') || '';
     //const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
     const nameContainer = document.querySelector('.hero h4 span');
-    nameContainer.innerText = `${name},`.replace(/ ,$/, ',');
+    nameContainer.innerText = name;
 
     document.querySelector('#name').value = name;
   </script>
