@@ -518,7 +518,7 @@
   </script>
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('n') || '';
+    const name = urlParams.get('name');
     //const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
     const nameContainer = document.querySelector('.hero h4 span');
     nameContainer.innerText = name;
