@@ -1,5 +1,5 @@
 :root {
-  --pink: #d49fb9;
+  --pink: #edca17;
   --bg: #311c47;
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
@@ -30,11 +30,12 @@ body {
   min-height: 100vh;
 }
 
+/*
 .hero h1,
 .hero h4,
 .hero p {
   text-shadow: var(--shadow);
-}
+} */
 
 /* define hero style */
 .hero h1 {
@@ -57,7 +58,7 @@ body {
 .hero a {
   background-color: var(--pink);
   color: white;
-  box-shadow: var(--shadow);
+  /*box-shadow: var(--shadow);*/
 }
 
 .hero a:hover {
@@ -365,32 +366,32 @@ footer li {
 }
 
 .audio-icon-wrapper {
-  width: 4rem;
-  height: 4rem;
-  font-size: 4rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
   position: fixed;
-  bottom: 2.5rem;
+  bottom: 2rem;
   right: 2rem;
   cursor: pointer;
   color: white;
   opacity: 0.5;
   mix-blend-mode: difference;
-  animation: rotating 4s linear infinite;
+  /*animation: rotating 4s linear infinite;
   transform-origin: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 0;
+  line-height: 0;*/
 }
 
-@keyframes rotating {
+/*@keyframes rotating {
   from {
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/
 
 /* Media Query */
 /* Extra large */
