@@ -1,7 +1,7 @@
 :root {
-  --pink: #edca17;
+  --pink: #e1b715;
   --bg: #311c47;
-  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  --shadow: 0 2px 2px rgba (146, 110, 48, 0.5);
 }
 
 /* define default body style */
@@ -30,18 +30,30 @@ body {
   min-height: 100vh;
 }
 
-/*
+
 .hero h1,
 .hero h4,
-.hero p {
+.hero h5 {
   text-shadow: var(--shadow);
-} */
+}
 
 /* define hero style */
 .hero h1 {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--pink);
+}
+
+/* define font size of h6 in hero */
+.hero h6 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6rem;
+}
+
+/* define font size of h5 in hero */
+.hero h5 {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
 }
 
 /* define font size of h4 in hero */
@@ -49,16 +61,11 @@ body {
   font-size: 1.6rem;
 }
 
-/* define font size of h5 in hero */
-.hero h5 {
-  font-size: 1.4rem;
-}
-
 /* define button style in hero */
 .hero a {
   background-color: var(--pink);
   color: white;
-  /*box-shadow: var(--shadow);*/
+  box-shadow: var(--shadow);
 }
 
 .hero a:hover {
@@ -77,7 +84,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Great Vibes', cursive;
   font-size: 3.2rem;
   font-weight: bold;
 }
@@ -114,6 +121,12 @@ body {
 }
 
 .home p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.home h6 {
+  font-family: 'Great Vibes', cursive;
   font-size: 1.1rem;
   color: #666;
 }
@@ -173,7 +186,9 @@ body {
 
 .info .card-header {
   border-bottom: 1px solid #999;
-  text-transform: uppercase;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  /*text-transform: uppercase;*/
   letter-spacing: 0.1rem;
 }
 
@@ -183,8 +198,7 @@ body {
 
 .info .card-footer {
   border-top: 1px solid #999;
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-size: 1rem;
 }
 
 .story,
@@ -210,8 +224,8 @@ body {
 .gallery p,
 .rsvp p,
 .gifts p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .timeline {
@@ -319,10 +333,6 @@ body {
   background-color: var(--bg);
 }
 
-.rsvp h2 {
-  font-size: 4.5rem;
-}
-
 .rsvp p {
   color: white;
 }
@@ -408,7 +418,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 70px;
+    padding: 32px;
   }
 
   .home .heart {
@@ -452,7 +462,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 60px;
+    padding: 25px;
     margin: 5px;
   }
 
@@ -478,7 +488,7 @@ footer li {
   }
 
   .simply-countdown > .simply-section {
-    padding: 40px;
+    padding: 18px;
     margin: 3px;
   }
 
