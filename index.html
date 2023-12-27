@@ -29,7 +29,8 @@
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <h4>THE WEDDING OF</h5>
+      <h4>To, <span></span> </h4>
+      <h5>THE WEDDING OF</h5>
       <h1>MONIKA</h1>
       <h6>and</h6> 
       <h1>ANDY</h1>
@@ -291,7 +292,7 @@
       </div>
 
       <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
+        action="https://script.google.com/macros/s/AKfycbzCdytU74eoJ_8xYgczr87KdX8kg1KqI_Buv8a-Z_Dzwu2n0IO8OSnhQry7okj3w-v7Jw/exec"
         id="my-form">
         <div class="col-12">
           <div class="mb-3">
@@ -301,18 +302,18 @@
         </div>
         <div class="col-12">
           <div class="mb-3">
-            <label for="jumlah" class="form-label">Number of Guest</label>
-            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+            <label for="status" class="form-label">Confirmation</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Select one</option>
+              <option value="Attend">I'll be there</option>
+              <option value="Not Attend">Can't come</option>
+            </select>
           </div>
         </div>
         <div class="col-12">
           <div class="mb-3">
-            <label for="status" class="form-label">Confirmation</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Select one</option>
-              <option value="Hadir">I'll be there</option>
-              <option value="Tidak Hadir">Can't come</option>
-            </select>
+            <label for="total" class="form-label">Number of Guest</label>
+            <input type="number" class="form-control" id="total" name="total" min="1" max="5" length="1" value="1">
           </div>
         </div>
         <div class="col-12" style="margin-top: 35px;">
@@ -363,15 +364,11 @@
           <ul class="list-group">
             <li class="list-group-item">
               <div class="fw-bold">BCA</div>
-              123456789 - MONIKA SEMBIRING
+              0840523811 - MONIKA SEMBIRING
             </li>
             <li class="list-group-item">
-              <div class="fw-bold">AMAZON WISH LIST</div>
+              <div class="fw-bold">MID FLORIDA</div>
               987654321 - ANDREW LEE SAILOR
-            </li>
-            <li class="list-group-item">
-              <div class="fw-bold">Saweria</div>
-              <img src="img/saweria.png" alt="Saweria QR" class="img-thumbnail" width="150">
             </li>
           </ul>
         </div>
@@ -486,6 +483,7 @@
     // }
     disableScroll();
   </script>
+
   <script>
     window.addEventListener("load", function () {
       const form = document.getElementById('my-form');
@@ -498,7 +496,7 @@
           body: data,
         })
           .then(() => {
-            alert("Konfirmasi kehadiran berhasil terkirim!");
+            alert("Your confirmation is successfully submitted!");
           })
       });
     });
