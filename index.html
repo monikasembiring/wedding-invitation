@@ -500,14 +500,13 @@
           })
       });
     });
-
   </script>
+
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('name') || '';
-    //const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+    const name = urlParams.get('name');
     const nameContainer = document.querySelector('.hero h4 span');
-    nameContainer.innerText = name;
+    nameContainer.innerText = ${name};
 
     document.querySelector('#name').value = name;
   </script>
