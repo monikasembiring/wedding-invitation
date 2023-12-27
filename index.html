@@ -29,7 +29,7 @@
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <h4>To, <span></span> </h4>
+      <h4>To: <span></span> </h4>
       <h5>THE WEDDING OF</h5>
       <h1>MONIKA</h1>
       <h6>and</h6> 
@@ -504,7 +504,7 @@
 
   <script>
     const urlParams = new URLSearchParams(window.location.search);
-    const name = urlParams.get('name');
+    const name = urlParams.get('name') || '';
     const nameContainer = document.querySelector('.hero h4 span');
     nameContainer.innerText = name;
 
