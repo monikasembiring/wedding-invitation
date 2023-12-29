@@ -71,12 +71,12 @@ body {
 .hero a:hover {
   background-color: white;
   color: var(--pink); /* to get color from variable we define */
+  
 }
 
 .mynavbar {
   background-color: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(4px);
-  margin-top: 2.3rem;
 }
 
 .mynavbar .offcanvas {
@@ -87,7 +87,6 @@ body {
 .mynavbar .offcanvas-title {
   font-family: 'Great Vibes', cursive;
   font-size: 3.2rem;
-  font-weight: bold;
 }
 
 .mynavbar .nav-link {
@@ -333,6 +332,7 @@ body {
 
 .rsvp {
   background-color: var(--bg);
+  align-items: center;
 }
 
 .rsvp p {
@@ -354,6 +354,45 @@ body {
   background-color: white;
   color: var(--pink);
   border: 1px solid white;
+}
+
+.rsvp .message_guest {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.25);
+  margin-top: 45px;
+  border-radius: 15px;
+  padding: 35px;
+  max-width: 600px;
+}
+
+.rsvp .message_guest p {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.rsvp .message_guest ul li span.from {
+  display: block;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.rsvp .message_guest ul li {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #5d708bbd;
+  color: #ffffff;
+}
+.rsvp .message_guest ul li span.guest_message {
+  font-weight: 100;
+}
+.rsvp .message_guest #message_list {
+  max-height: 600px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.rsvp .message_guest #message_list::-webkit-scrollbar {
+  display: none;
 }
 
 footer {

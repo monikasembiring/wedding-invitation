@@ -42,14 +42,14 @@
 
   <nav class="navbar navbar-expand-sm bg-transparent sticky-top mynavbar">
     <div class="container">
-      
+      <a class="navbar-brand" href="#">M & A</a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Monika & Andy</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">M & A</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -236,7 +236,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <span>Our Memory</span>
-          <h2>Photo Collection</h2>
+          <h2>Photo Collections</h2>
           <p>Trying to take pre-wedding pics. We're so awkward that even the camera asked, 'Are you two sure you're not trying to capture a 'How Not to Pose' tutorial?' 😅📸</p>
         </div>
       </div>
@@ -290,63 +290,70 @@
           <p>Please fill the form below to confirm your attendance to witness our special day</p>
         </div>
       </div>
+    </div>
 
-      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
-        action="https://script.google.com/macros/s/AKfycbzCdytU74eoJ_8xYgczr87KdX8kg1KqI_Buv8a-Z_Dzwu2n0IO8OSnhQry7okj3w-v7Jw/exec"
-        id="my-form">
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" name="name">
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="status" class="form-label">Confirmation</label>
-            <select name="status" id="status" class="form-select">
-              <option selected>Select one</option>
-              <option value="Attend">I'll be there</option>
-              <option value="Not Attend">Can't come</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="mb-3">
-            <label for="total" class="form-label">Number of Guest</label>
-            <input type="number" class="form-control" id="total" name="total" min="1" max="5" length="1" value="1">
-          </div>
-        </div>
-        <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Submit</button>
-        </div>
-      </form>
-
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-6">
-          <div id="disqus_thread"></div>
-          <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-
-            var disqus_config = function () {
-              this.page.url = 'https://monikasembiring.github.io/wedding-invitation/';  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = 'https://monikasembiring.github.io/wedding-invitation/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-
-            (function () { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://monika-andy-wedding.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-              Disqus.</a></noscript>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <form
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbyOTi__tyTTv6yP8zEVrm0DvkauEZEeC_8SLyYgeVYrpIRNpZ-K3Hllr5x2SWx0_1np/exec"
+            id="my-form">
+            <div class="col-10 col-lg-6 mx-auto">
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="col-10 col-lg-6 mx-auto">
+              <div class="mb-3">
+                <label for="status" class="form-label">Confirmation</label>
+                <select name="status" id="status" class="form-select">
+                  <option value="" selected disabled style="color: lightgray;">Select one</option>
+                  <option value="Attend">I'll be there</option>
+                  <option value="Not Attend">Can't come</option>
+                  <option value="Maybe">Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-10 col-lg-6 mx-auto">
+              <div class="mb-3">
+                <label for="total" class="form-label">Number of Guest</label>
+                <input type="number" class="form-control" id="total" name="total" min="1" max="5" length="1" value="1">
+              </div>
+            </div>
+            <div class="col-10 col-lg-6 mx-auto">
+              <div class="mb-3">
+                <label for="message" class="form-label">Message to Bridge and Groom</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message to bridge and groom"></textarea>
+              </div>
+            </div>
+            <div class="col-10 col-lg-6 mx-auto">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
-
     </div>
+    <div class="message_guest" data-aos="fade-up" data-aos-duration="1000">
+      <p class="mb-4">Doa & Ucapan dari undangan</p>
+      <ul id="message_list" style="list-style: none;">
+          <li>
+              <span class="from">Elizabeth Bennet dan Darcy</span>
+              <span class="guest_message">Sejatinya pernikahan adalah lembaran baru kehidupan,
+                  kebahagiaan, kebersamaan, dan hal-hal baik lainnya yang menyertai.</span>
+          </li>
+          <li>
+              <span class="from">Edward &amp; Bella</span>
+              <span class="guest_message">Mantap!! Selamat berbahagia menjalani bahtera rumah tangga yang
+                  baru.</span>
+          </li>
+          <li>
+              <span class="from">Cinta &amp; Rangga</span>
+              <span class="guest_message">Yeay!! Selamat ya, akhirnya kalian nikah juga :p</span>
+          </li>
+      </ul>
+  </div>
   </section>
 
   <section id="gifts" class="gifts">
@@ -429,7 +436,6 @@
     offcanvas.addEventListener('hidden.bs.offcanvas', function () {
       stickyTop.style.overflow = 'hidden';
     });
-
   </script>
 
   <script>
@@ -510,6 +516,8 @@
 
     document.querySelector('#name').value = name;
   </script>
+
+  
 </body>
 
 </html>
