@@ -53,13 +53,13 @@ body {
 /* define font size of h5 in hero */
 .hero h5 {
   font-size: 1.4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 /* define font size of h4 in hero */
 .hero h4 {
   font-size: 1.6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 /* define button style in hero */
@@ -108,7 +108,8 @@ body {
 .faq h2,
 .gallery h2,
 .rsvp h2,
-.gifts h2 {
+.gifts h2,
+.wish h2 {
   color: var(--pink);
   font-family: 'Nunito Sans', sans-serif;
   font-size: 3rem;
@@ -205,7 +206,8 @@ body {
 .faq,
 .gallery,
 .rsvp,
-.gifts {
+.gifts,
+.wish {
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
@@ -215,7 +217,17 @@ body {
 .rsvp span,
 .gifts span {
   text-transform: uppercase;
-  color: #666;
+  color: black;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.rsvp span,
+.wish span {
+  text-transform: uppercase;
+  color: white;
   font-size: 0.9rem;
   letter-spacing: 1px;
   display: block;
@@ -352,6 +364,8 @@ body {
   padding-top: 56.25%;
 }
 
+
+
 .youtube{
   position: absolute;
   left: 0;
@@ -386,43 +400,58 @@ body {
   border: 1px solid white;
 }
 
-.rsvp .message_guest {
+.wish {
+  background-color: var(--bg);
+  align-items: center;
+}
+
+.wish .wish_guest {
   margin: auto;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
   margin-top: 45px;
   border-radius: 15px;
   padding: 35px;
   max-width: 600px;
+  margin-left: 40px;
 }
 
-.rsvp .message_guest p {
-  font-family: "Dancing Script", cursive;
-  font-size: 2rem;
-  color: #ffffff;
+.wish .wish_guest p {
+  color: black;
+  font-size: 0.9rem;
 }
-.rsvp .message_guest ul li span.from {
+
+.wish .wish_guest h6 {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.wish .wish_guest ul li span.from {
   display: block;
-  text-transform: capitalize;
   font-weight: bold;
   margin-bottom: 5px;
 }
-.rsvp .message_guest ul li {
+.wish .wish_guest ul li {
   margin-bottom: 10px;
   padding: 15px;
   border-radius: 10px;
-  background: #5d708bbd;
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
 }
-.rsvp .message_guest ul li span.guest_message {
+.wish .wish_guest ul li span.guest_wish {
   font-weight: 100;
 }
-.rsvp .message_guest #message_list {
+.wish .wish_guest #wish_list {
   max-height: 600px;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
-.rsvp .message_guest #message_list::-webkit-scrollbar {
+.rsvp .wish_guest #wish_list::-webkit-scrollbar {
   display: none;
+}
+
+.custom-text-color {
+  color: white;
 }
 
 footer {
