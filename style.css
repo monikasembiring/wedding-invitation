@@ -66,7 +66,7 @@ body {
 .hero a {
   background-color: var(--pink);
   color: white;
-  box-shadow: var(--shadow);
+  box-shadow: 6px 6px 0 var(--shadow);
 }
 
 .hero a:hover {
@@ -250,6 +250,12 @@ body {
   font-weight: 400;
 }
 
+.wish p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+}
+
 .gifts h6 {
   font-size: 0.7rem;
   font-weight: 400;
@@ -417,6 +423,7 @@ body {
 .wish .wish_guest p {
   color: black;
   font-size: 0.9rem;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .wish .wish_guest h6 {
@@ -445,8 +452,27 @@ body {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
-.rsvp .wish_guest #wish_list::-webkit-scrollbar {
+.wish .wish_guest #wish_list::-webkit-scrollbar {
   display: none;
+}
+
+/* Default styling for the iframe */
+iframe {
+  border: 0; /* Optional: Remove iframe border */
+}
+
+/* Media query for screens with a width of 600 pixels or less (mobile) */
+@media only screen and (max-width: 600px) {
+  iframe {
+      width: 100%;
+  }
+}
+
+/* Media query for screens with a width greater than 600 pixels (large screens) */
+@media only screen and (min-width: 601px) {
+  iframe {
+      width: 60%;
+  }
 }
 
 .custom-text-color {
