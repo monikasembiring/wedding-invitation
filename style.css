@@ -30,7 +30,6 @@ body {
   min-height: 100vh;
 }
 
-
 .hero h1,
 .hero h4,
 .hero h5 {
@@ -196,6 +195,13 @@ body {
 
 .info .card-body {
   font-size: 1rem;
+}
+
+.info .card-note {
+  font-size: 0.7rem;
+  border-top: 1px solid #999;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .info .card-footer {
